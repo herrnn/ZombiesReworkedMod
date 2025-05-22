@@ -107,7 +107,7 @@ public class HordeSpawningEvent
                                             {
                                                 this.spawnHordeEntity(level, blockpos$mutableblockpos, random, false);
                                                 player.displayClientMessage(Component.literal("The Dead have risen."), true);
-                                                player.level.playSound(null, player.blockPosition(), ModdedSounds.ZOMEBIE_HORDE_SPAWN.get(), SoundSource.HOSTILE, 0.8F, 1.0F);
+                                                player.level().playSound(null, player.blockPosition(), ModdedSounds.ZOMBIE_HORDE_SPAWN.get(), SoundSource.HOSTILE, 0.8F, 1.0F);
                                             }
 
                                             blockpos$mutableblockpos.setX(blockpos$mutableblockpos.getX() + random.nextInt(5) - random.nextInt(5));
